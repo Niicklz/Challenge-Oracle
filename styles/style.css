@@ -42,21 +42,35 @@ p.alert {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3em;
 }
 
 .decrypt, .encrypt {
-    width: 80%;
+    width: 90%;
     max-width: 500px;
+    height: 60px;
+    border: none;
+    border-radius: 1em;
+    font-size: 1.33em;
+    font-weight: bold;
     
 }
 .decrypt {
-    background-color: #0A3871;
-    border: none;
+    
+    background-color: #E5E5E5;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    
 }
 
 .encrypt {
-    background-color: #E5E5E5;
+    
+    background-color: #0A3871;
+    color: #E5E5E5;
+
 }
+
+
 
 
 
