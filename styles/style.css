@@ -1,0 +1,65 @@
+
+main {
+    font-size: 12px;
+    width: 100%;
+    min-width: 300px;    
+    min-height: 100vh;
+    background-color: #E5E5E5;
+    padding: 2em;
+    font-family: 'Inter', sans-serif;   
+    
+    
+}
+
+textarea {
+    resize: none;
+    background-color: #E5E5E5;
+    border: none;
+    margin-top: 3em;
+    width: 100%;
+    
+}
+textarea::placeholder {
+    color: #0A3871;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p.alert {
+    color: #495057;
+    font-size: 1em;    
+    font-weight: bold;
+    margin-bottom: 2em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+}
+.btns-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.decrypt, .encrypt {
+    width: 80%;
+    max-width: 500px;
+    
+}
+.decrypt {
+    background-color: #0A3871;
+    border: none;
+}
+
+.encrypt {
+    background-color: #E5E5E5;
+}
+
+
+
+
+
+
