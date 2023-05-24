@@ -15,13 +15,22 @@ textarea {
     resize: none;
     background-color: #E5E5E5;
     border: none;
-    margin-top: 3em;
+    margin-top: 2em;
     width: 100%;
-    
+    color: #0A3871;
+    font-size: 2.66em;
+    font-weight: bold;
+   
 }
+textarea:focus {
+    border: 1px solid #0A3871;
+    outline: none;
+}
+
+
 textarea::placeholder {
     color: #0A3871;
-    font-size: 2em;
+    
     font-weight: bold;
 }
 
@@ -67,7 +76,134 @@ p.alert {
     
     background-color: #0A3871;
     color: #E5E5E5;
+}
 
+.second-sect {
+    width: 100%;
+
+}
+
+.results-cont {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 186px;
+    text-align: center;
+    border-radius: 1em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+    
+}
+.text-result {
+    align-self: flex-start;
+    font-size: 2em;
+    color: #0A3871;
+    font-weight: bold;
+    
+}
+.text-alert-title {
+    font-size: 2em;
+    font-weight: 700;
+    color: #343A40;
+    line-height: 1.2em;
+
+}
+
+.text-alert-descript {
+    margin-top: 1em;
+    font-size: 1.33em;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #495057;
+    
+
+}
+
+.copy-btn {
+    font-size: 1.33em;
+    width: 100%;
+    margin-top: 2em;
+    height:  4em;
+    border-radius: 1em;
+    background-color: #FFFFFF;
+    border: none;
+    border: 1px solid #0A3871;
+}
+.decrypt:active, .encrypt:active, .copy-btn:active {
+    background-color: green;
+    color: #E5E5E5;
+
+}
+
+.inactive {
+    display: none;
+}
+.not-found-image {
+    display: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .results-cont {
+        justify-content: space-evenly;
+    }
+    .btns-cont {
+        flex-direction: row;
+    }
+
+    .decrypt, .encrypt {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1280px) {
+    main {
+        display: flex;
+        font-size: 14px;
+        
+    }
+    .first-sect {
+        width: 70%;
+        
+    }
+    .second-sect {
+        width: 40%;
+        
+        
+    }
+    .results-cont {
+        height: 100%;
+        border: 2px solid #0A3871;
+        justify-content:center;
+        position: relative;
+        
+        
+    }
+    .text-result {
+        position: absolute;
+        top: 34px;
+    }
+    .copy-btn {
+        position: absolute;
+        width: 80%;
+        bottom: 30px;
+    }
+    .not-found-image {
+        display: block;
+        width: 100%;
+        height: 200px;
+        background-image: url(/assets/Muñeco.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        
+    }
 }
 
 
